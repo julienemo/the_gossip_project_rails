@@ -1,24 +1,30 @@
-# README
+# Gossip Project - BDD
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## How to install?
+```
+# Clone the project
+$ git clone https://github.com/forkhembo/the_gossip_project_rails.git
 
-Things you may want to cover:
+# CD into the folder
+$ cd the_gossip_project_rails
 
-* Ruby version
+# Install gems
+$ bundle install
 
-* System dependencies
+# Launch the migrations
+$ rails db:migrate
 
-* Configuration
+# Create seed
+$ rails db:seed
 
-* Database creation
+# Launch server
+$ rails server
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+OPTIONAL
+# If you have a bug when you launch your console, type this before `rails console`
+$ spring stop
+```
+Application is hosted on [Localhost:3000](http://localhost:3000)
+------
+Made with ❤ in Paris\
+By [Romain Cabirol](https://github.com/forkhembo/) and [Arthur Klein](https://github.com/arthurjacobklein)
