@@ -1,6 +1,6 @@
 class WelcomeController < ApplicationController
   def index 
-    @gossips = Gossip.all
+    @gossip = Gossip.first
   end
 
   def index_post
