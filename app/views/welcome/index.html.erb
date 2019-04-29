@@ -29,10 +29,20 @@
             </div>
     </nav>
 </header>
+
     <h1>Welcome <%= params[:first_name]%></h1>
-    <p><% Gossip.all.each do |gossip| %>
-       <a href = "/gossip/<%= gossip.id %>"><p> <%= gossip.user.first_name%>: <%= gossip.title %></p></a>
+    <p>
+   
+        <% Gossip.all.each do |gossip| %>
+        <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title"><%= gossip.title %></h5>
+            <p class="card-text">Written by <%= gossip.user.first_name%> <%= gossip.user.last_name%> </p>
+            <a href="../gossip/<%= gossip.id %>" class="btn btn-primary">More details on this gossip</a>
+        </div>
+        </div>
 	   <% end %>
+
     </p>
 </form>
 </body>
