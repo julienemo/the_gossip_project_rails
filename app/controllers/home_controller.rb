@@ -1,4 +1,4 @@
-class PagesController < ApplicationController
+class HomeController < ApplicationController
   def show
     render template: "home"
   end
