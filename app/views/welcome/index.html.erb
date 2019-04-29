@@ -31,7 +31,7 @@
 </header>
     <h1>Welcome <%= params[:first_name]%></h1>
     <p><% Gossip.all.each do |gossip| %>
-       <a href = /gossip/<% @id %>><p> <%= gossip.user.first_name%>: <%= gossip.title %></p></a>
+       <a href = "/gossip/<%= gossip.id %>"><p> <%= gossip.user.first_name%>: <%= gossip.title %></p></a>
 	   <% end %>
     </p>
 </form>
