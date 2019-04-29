@@ -1,7 +1,8 @@
 class WelcomeController < ApplicationController
   def index 
-   
+    @gossips = Gossip.all
   end
+
   def index_post
     puts "hello depuis le serv"
     user = User.new
