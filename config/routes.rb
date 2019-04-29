@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   #get "/welcome", to: "welcome#index"
   post "/welcome/", to: "welcome#index_post"
   #get '/welcome/:first_name', to: 'welcome#index_post'
+  get '/gossip/:id', to: 'gossip#each'
 end
