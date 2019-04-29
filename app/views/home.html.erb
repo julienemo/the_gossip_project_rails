@@ -27,6 +27,12 @@
               </ul>
             </div>
           </nav></header>
-    <h1>Welcome to The Gossip Project</h1>
+    <h1>Welcome <%= params[:first_name]%></h1>
+    <form action="/welcome/<%= params[:first_name]%>" method="post">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <p>Quel est ton prénom ?</p>
+    <input type="text" name="first_name">
+    <input type="submit" name="envoyer">
+</form>
 </body>
 </html>
